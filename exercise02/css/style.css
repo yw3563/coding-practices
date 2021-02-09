@@ -2,15 +2,48 @@
 
 /* green: #00D200 */
 .title {
-  color: #993A26;
+  color: black;
+  position: fixed;
+  top: 300px;
+  background: yellow
 }
 .author {
   color: #4C2699;
+  position: fixed;
+  top: 350px;
 }
-strong {
+.pullquote {
   font-family: "Raleway", sans-serif;
   color: #4C2699;
 }
+
+.pullquote:hover{
+  color:blue;
+}
+
 p {
   font-family: "Raleway", sans-serif;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+}
+
+/*children */
+.column{
+  padding: 10px 40px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.left{
+  hight: 300px;
+ /* background: grey */
+}
+
+.right{
+  hight: 300px;
+ /*  background: grey */
 }
