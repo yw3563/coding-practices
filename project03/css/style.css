@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@600&display=swap');
 
 body,
 html{
@@ -7,40 +8,59 @@ html{
 
 nav {
   height: 60px;
+  /* width: 1200px; */
+  /* position: fixed; */
 }
 
-ul.container {
+ul.menu {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-around;
 
   list-style: none;
-  background: grey;
+  background-color: #A2C4C3;
   margin: 0;
   line-height: 60px;
 }
 
-.container a {
+.menu a {
   text-decoration: none;
-  color: #F4F4F4;
+  color: white;
 }
-/* ----------------------------------------
-Base Styles
-------------------------------------------- */
-* {
-	box-sizing: border-box;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px 40px;
+  width: 50%;
+  line-height: 1.68;
 }
+
 
 /* ----------------------------------------
 Typography
 ------------------------------------------- */
+h2{
+  margin-bottom:0px;
+  margin-top:0px;
+  color: #244B3F;
+}
 
-
-
+h3{
+  margin-bottom:0px;
+  margin-top:40px;
+  color: #244B3F;
+}
+p{
+  color: #244B3F;
+}
 /* ----------------------------------------
 Lists
 ------------------------------------------- */
-
+.issues{
+  color: #5E7F7E;
+}
 
 
 /* ----------------------------------------
@@ -51,14 +71,34 @@ Layout
 /* ----------------------------------------
 Header
 ------------------------------------------- */
-
+.header{
+  padding: 80px 40px;
+  color: white;
+  font-family: 'Merriweather Sans', sans-serif;
+  letter-spacing: 10px;
+}
+.backgroundimage{
+  padding: 25px;
+  background-image: url("blog_header_bg.jpg");
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
 
 /* ----------------------------------------
 Buttons
 ------------------------------------------- */
-
+.buttons{
+  padding: 25px;
+  background-color: #98E5DF;
+}
 
 
 /* ----------------------------------------
 Footer
 ------------------------------------------- */
+footer{
+  background-color: #98E5DF;
+}
