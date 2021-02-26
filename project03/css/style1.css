@@ -8,9 +8,9 @@ html{
 
 nav {
   height: 60px;
-  width: 945px;
-  padding: 20px 40px;
-   position: fixed;
+  /* width: 945px; */
+  /* padding: 20px 40px; */
+   /* position: fixed; */
 }
 
 ul.menu {
@@ -32,7 +32,7 @@ ul.menu {
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 80px 40px;
+  padding: 20px 40px;
   width: 50%;
   line-height: 1.68;
 }
