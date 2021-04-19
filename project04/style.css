@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 body,
+
 html{
   font-family: 'Righteous', cursive;
 }
 
+h1 {
+  font-size: 40px;
+}
+
 nav {
-  height: 60px;
+  height: 50px;
   width: 95%;
   position: fixed;
 }
@@ -16,27 +21,26 @@ nav {
   padding: 0;
   overflow: hidden;
 }
-#menu li {
-  float: left;
-  width: 200px;
-  height: 10%;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  list-style: none;
-  margin: 10px;
-  line-height: 60px;
-}
-button {
+
+.catagory {
     font-family: 'Righteous', cursive;
     font-size: 17px;
     background: #DAF7A6;
     border: 3px solid black;
     /* color: #fff; */
     outline: none;
+    float: left;
+    width: 200px;
+    height: 10%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    list-style: none;
+    margin: 10px;
+    line-height: 60px;
 }
 
-button:active {
+input:focus {
     background: #FFC300;
     /* color: #000; */
 }
@@ -47,69 +51,42 @@ button:active {
 }
 
 .container {
-  display: flex;
+  display: center;
   flex-direction: column;
   text-align: center;
-  padding: 40px 40px;
+  padding: 0px 40px;
   width: 50%;
   /* line-height: 1.68; */
 }
 
-#pictureList {
-    padding-inline-start: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 20px;
-}
-
-.picture {
-    list-style-type: none;
-    background-color: #eaeaea;
-    border-radius: 3px;
-    padding: 10px 20px;
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-areas:
-        'name image'
-        'house image';
-    text-align: left;
-}
-
-.picture > h2 {
-    grid-area: name;
-    margin-bottom: 0px;
-}
-
-.picture > p {
-    grid-area: house;
-    margin: 0;
-    margin-top: -18px;
-}
-
-.picture > img {
-    max-height: 100px;
-    grid-area: image;
-}
-
-#searchBar {
-    width: 100%;
+.searchBar {
+    width: 20%;
     height: 20px;
     border-radius: 3px;
     border: 3px solid #eaeaea;
     padding: 5px 10px;
     font-size: 12px;
+    font-family: 'Righteous', cursive;
+    font-size: 17px;
+    background: #DAF7A6;
+    border: 3px solid black;
 }
 
-#searchWrapper {
-    position: absolute;
-    top: 220px;
-    right: 400px;
-    width: 20%;
+.searchButton {
+    width: 200px;
+    height: 50;
+    border-radius: 3px;
+    border: 3px solid #eaeaea;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-family: 'Righteous', cursive;
+    font-size: 17px;
+    background: #DAF7A6;
+    border: 3px solid black;
 }
 
-#searchWrapper::after {
-    content: '🔍';
-    position: absolute;
-    top: 7px;
-    right: 15px;
+.ShowPictures{
+  width: 90%;
+  height: 200px;
+  padding: 100px 40px;
 }

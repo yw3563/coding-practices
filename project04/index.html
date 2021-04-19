@@ -12,33 +12,29 @@
     <h1 align="center">Irezumi Collection</h1>
 
     <div class="container">
-    <nav>
-      <ul id = "menu">
-        <button id="animals"><li><a href="#">Animals</a></li></button>
-        <button id="mythologicalcreatures"><li><a href="#">Mythological Creatures</a></li></button>
-        <button id="godsanddemons"><li><a href="#">Gods and Demons</a></li></button>
-        <button id="characters"><li><a href="#">Characters</a></li></button>
-        <button id="others"><li><a href="#">Others</a></li></button>
-      </ul>
-    </nav>
+  <nav>
+    <ul id = "menu">
 
-            <div id="searchWrapper">
-                <input
-                    type="text"
-                    name="searchBar"
-                    id="searchBar"
-                    placeholder="search for a keyword"
-                />
-            </div>
-            <ul id="pictureList"></ul>
+    <input class = "catagory" type="button" value="Animals" onclick="findPicByTag('Animals')"/>
+    <input class = "catagory" type="button" value="Mythological Creatures" onclick="findPicByTag('Mythological Creatures')"/>
+    <input class = "catagory" type="button" value="Gods and Demons" onclick="findPicByTag('Gods and Demons')"/>
+    <input class = "catagory" type="button" value="Characters" onclick="findPicByTag('Characters')"/>
+    <input class = "catagory" type="button" value="Others" onclick="findPicByTag('Others')"/><br>
+
+    <div id="searchBar">
+    <input type='text' class="searchBar" id='picTagText' placeholder="search for a keyword"/>
+    <input type="button"  class="searchButton" value="Search" onclick="findPic()"/><br>
     </div>
 
+    </ul>
+  </nav>
 
-    <script src="project.js"></script>
-    <script src="pictures.json"></script>
+    </div>
 
-
-
-
+    <div id='picArea' class = "ShowPictures" align="center"><h2>Click on Buttons or Use Search Bar for Pictures</h2><br><br><br><br>
+    </div>
   </body>
+
+    <script src="pictures.js"></script>
+
 </html>
