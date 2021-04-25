@@ -11,3 +11,55 @@
   height: 100px;
   background-color: blue;
 }
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body,
+html{
+  font-family: 'Roboto', sans-serif;
+}
+
+
+nav {
+
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  list-style: none;
+  background-color: Salmon;
+  margin: 0;
+  line-height: 60px;
+}
+
+li {
+  padding: 30px 150px;
+  background-color: Salmon;
+}
+li:hover{
+  padding: 30px 150px;
+  animation: changecolor 3s ease-in-out .2s;
+}
+
+@keyframes changecolor {
+  0% {
+    background-color: #E79678;
+  }
+  40% {
+    background-color: ##D69589;
+  }
+  60% {
+    background-color: ##D69F89;
+  }
+  100% {
+    background-color: #FFC300;
+  }
+
+}
+a {
+  color:white;
+  text-decoration: none;
+}

@@ -77,8 +77,8 @@ const container = document.querySelector('.container');
 
 artists.forEach(function(artist){
 //create  a new tag for each artist to render
+  console.log(artist.name);
   let paragraph = document.createElement('p');
-//pass the name to the paragraph
   console.log(artist)
   let artist_name = artist.name
   paragraph.textContent = artist_name
