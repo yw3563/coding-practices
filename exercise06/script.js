@@ -21,3 +21,5 @@ let sentence = `My ${randomNoun} leaps ${randomAdjective} when I ${randomVerb} a
 //concatenation
 //let sentence = 'My' + noun + 'leaps' + adjective +' when I' + verb + 'a rainbow in the sky'
 console.log(sentence)
+
+document.getElementById("demo").innerHTML=sentence;
